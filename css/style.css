@@ -765,3 +765,19 @@ footer {
 
 
 }
+/* Keep buttons the same after clicking */
+
+.button,
+.button:visited {
+
+    color:white;
+    text-decoration:none;
+
+}
+
+
+.button:hover {
+
+    color:white;
+
+}
