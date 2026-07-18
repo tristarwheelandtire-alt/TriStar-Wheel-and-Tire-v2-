@@ -1,163 +1,218 @@
-/* ===== Reset ===== */
+/* =================================
+   TriStar Wheel & Tire
+   Professional Black & White Theme
+================================= */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#111;
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #0b0b0b;
+
+    color: white;
+
+    line-height: 1.6;
+
+}
+
+
+/* =================================
+   Navigation
+================================= */
+
+
+header {
+
+    background: #000;
+
+    border-bottom: 1px solid #222;
+
+}
+
+
+.navbar {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 25px 20px;
+
+}
+
+
+.logo a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+}
+
+
+.nav-links {
+
+    display: flex;
+
+    list-style: none;
+
+    gap: 30px;
+
+}
+
+
+.nav-links a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    transition: .3s;
+
+}
+
+
+.nav-links a:hover {
+
+    color: #aaa;
+
+}
+
+
+
+/* =================================
+   Hero Section
+================================= */
+
+
+.hero {
+
+    min-height: 85vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,.75),
+        rgba(0,0,0,.75)
+    ),
+
+    url("../images/truck.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+.hero-content {
+
+    max-width: 850px;
+
+}
+
+
+.hero h1 {
+
+    font-size: 60px;
+
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+
+}
+
+
+.hero p {
+
+    font-size: 22px;
+
+    color: #ddd;
+
+    margin-bottom: 40px;
+
+}
+
+
+
+/* =================================
+   Buttons
+================================= */
+
+
+.button {
+
+    display: inline-block;
+
+    background: white;
+
+    color: black;
+
+    padding: 16px 40px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border-radius: 5px;
+
+    transition: .3s;
+
+}
+
+
+.button:hover {
+
+    background: #000;
+
     color:white;
-    line-height:1.6;
-}
 
-
-/* ===== Navigation ===== */
-
-header{
-    background:#000;
-    position:sticky;
-    top:0;
-    z-index:1000;
-}
-
-.navbar{
-
-    max-width:1200px;
-
-    margin:auto;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    padding:20px;
-
-}
-
-.logo a{
-
-    color:white;
-
-    text-decoration:none;
-
-    font-size:30px;
-
-    font-weight:bold;
-
-}
-
-.nav-links{
-
-    display:flex;
-
-    list-style:none;
-
-    gap:25px;
-
-}
-
-.nav-links a{
-
-    color:white;
-
-    text-decoration:none;
-
-    font-weight:bold;
-
-    transition:.3s;
-
-}
-
-.nav-links a:hover{
-
-    color:#d4af37;
+    border:1px solid white;
 
 }
 
 
 
-/* ===== Hero ===== */
-
-.hero{
-
-    height:85vh;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    text-align:center;
-
-    padding:20px;
-
-    background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65));
-
-}
-
-.hero-content{
-
-    max-width:900px;
-
-}
-
-.hero h1{
-
-    font-size:58px;
-
-    margin-bottom:20px;
-
-}
-
-.hero p{
-
-    font-size:22px;
-
-    margin-bottom:40px;
-
-}
+/* =================================
+   Sections
+================================= */
 
 
-
-/* ===== Buttons ===== */
-
-.button{
-
-    display:inline-block;
-
-    background:#d4af37;
-
-    color:black;
-
-    text-decoration:none;
-
-    padding:15px 35px;
-
-    border-radius:8px;
-
-    font-weight:bold;
-
-    transition:.3s;
-
-}
-
-.button:hover{
-
-    background:white;
-
-}
-
-
-
-/* ===== Sections ===== */
-
-.section{
+.section {
 
     max-width:1200px;
 
@@ -167,7 +222,8 @@ header{
 
 }
 
-.section h2{
+
+.section h2 {
 
     text-align:center;
 
@@ -177,77 +233,103 @@ header{
 
 }
 
-.dark{
 
-    background:#181818;
+.dark {
 
-    max-width:100%;
+    background:#050505;
+
+    max-width:none;
 
 }
 
 
 
-/* ===== Cards ===== */
+/* =================================
+   Cards
+================================= */
 
-.cards{
+
+.cards {
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
 
     gap:25px;
 
 }
 
-.card{
 
-    background:#222;
+.card {
 
-    border-radius:12px;
+    background:#161616;
 
-    padding:30px;
+    border:1px solid #2a2a2a;
+
+    padding:35px;
+
+    border-radius:8px;
 
     transition:.3s;
 
 }
 
-.card:hover{
 
-    transform:translateY(-8px);
+.card:hover {
+
+    transform:translateY(-5px);
+
+    border-color:white;
 
 }
 
-.card h3{
+
+.card h3 {
+
+    font-size:24px;
 
     margin-bottom:15px;
 
 }
 
 
+.card p {
 
-/* ===== CTA ===== */
+    color:#ccc;
 
-.cta{
+}
 
-    background:#000;
+
+
+/* =================================
+   Interior Pages
+================================= */
+
+
+.page-header {
 
     text-align:center;
 
     padding:80px 20px;
 
+    background:#000;
+
 }
 
-.cta h2{
 
-    font-size:42px;
+.page-header h1 {
+
+    font-size:50px;
 
     margin-bottom:20px;
 
 }
 
-.cta p{
 
-    margin-bottom:35px;
+.page-header p {
+
+    color:#ccc;
 
     font-size:20px;
 
@@ -255,13 +337,74 @@ header{
 
 
 
-/* ===== Forms ===== */
+.content {
 
-.quote-form{
+    max-width:1100px;
+
+    margin:auto;
+
+    padding:70px 20px;
+
+    text-align:center;
+
+}
+
+
+
+/* =================================
+   Gallery
+================================= */
+
+
+.gallery-grid {
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+}
+
+
+.gallery-card {
+
+    background:#161616;
+
+    padding:20px;
+
+    border-radius:8px;
+
+}
+
+
+.image-placeholder {
+
+    height:220px;
+
+    background:#222;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+
+
+/* =================================
+   Quote Form
+================================= */
+
+
+.quote-form {
 
     max-width:700px;
 
-    margin:40px auto;
+    margin:auto;
 
     display:flex;
 
@@ -271,60 +414,94 @@ header{
 
 }
 
+
 .quote-form input,
-.quote-form textarea{
+.quote-form textarea {
+
+    background:#111;
+
+    color:white;
+
+    border:1px solid #333;
 
     padding:15px;
 
-    border:none;
-
-    border-radius:8px;
-
-    font-size:16px;
+    border-radius:5px;
 
 }
 
-.quote-form textarea{
 
-    min-height:140px;
+.quote-form textarea {
 
-}
-
-.quote-form button{
-
-    border:none;
-
-    cursor:pointer;
+    height:140px;
 
 }
 
 
 
-/* ===== Footer ===== */
+/* =================================
+   Call To Action
+================================= */
 
-footer{
 
-    background:#000;
+.cta {
 
     text-align:center;
 
-    padding:25px;
+    background:#000;
+
+    padding:80px 20px;
+
+}
+
+
+.cta h2 {
+
+    font-size:40px;
+
+    margin-bottom:20px;
 
 }
 
 
 
-/* ===== Mobile ===== */
+/* =================================
+   Footer
+================================= */
+
+
+footer {
+
+    background:#000;
+
+    border-top:1px solid #222;
+
+    text-align:center;
+
+    padding:30px;
+
+    color:#aaa;
+
+}
+
+
+
+/* =================================
+   Mobile
+================================= */
+
 
 @media(max-width:768px){
 
-.navbar{
+
+.navbar {
 
     flex-direction:column;
 
 }
 
-.nav-links{
+
+.nav-links {
 
     margin-top:20px;
 
@@ -334,22 +511,19 @@ footer{
 
 }
 
-.hero h1{
+
+.hero h1 {
 
     font-size:38px;
 
 }
 
-.hero p{
 
-    font-size:18px;
-
-}
-
-.section h2{
+.section h2 {
 
     font-size:32px;
 
 }
+
 
 }
