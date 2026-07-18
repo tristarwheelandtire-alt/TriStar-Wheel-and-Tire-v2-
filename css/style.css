@@ -392,3 +392,63 @@ nav ul {
     border-radius:10px;
 
 }
+.quote-form {
+
+    max-width:700px;
+
+    margin:40px auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+
+
+.quote-form label {
+
+    text-align:left;
+
+    font-weight:bold;
+
+}
+
+
+
+.quote-form input,
+.quote-form textarea {
+
+    padding:15px;
+
+    border-radius:5px;
+
+    border:none;
+
+    font-size:16px;
+
+}
+
+
+
+.quote-form textarea {
+
+    height:120px;
+
+    resize:vertical;
+
+}
+
+
+
+.quote-form button {
+
+    border:none;
+
+    cursor:pointer;
+
+    margin-top:20px;
+
+}
