@@ -527,3 +527,116 @@ footer {
 
 
 }
+/* =================================
+   Modern Homepage Hero
+================================= */
+
+
+.hero-modern {
+
+    max-width:1200px;
+
+    margin:auto;
+
+    min-height:80vh;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    align-items:center;
+
+    gap:50px;
+
+    padding:80px 20px;
+
+}
+
+
+
+.hero-text h1 {
+
+    font-size:55px;
+
+    line-height:1.1;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.hero-text p {
+
+    color:#cccccc;
+
+    font-size:20px;
+
+    margin-bottom:35px;
+
+}
+
+
+
+.hero-image img {
+
+    width:100%;
+
+    height:500px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+    border:1px solid #333;
+
+}
+
+
+
+
+/* Homepage image placeholder */
+
+.hero-image {
+
+    background:#111;
+
+    min-height:500px;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+}
+
+
+
+/* Mobile homepage */
+
+@media(max-width:900px){
+
+
+.hero-modern {
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+}
+
+
+.hero-text h1 {
+
+    font-size:40px;
+
+}
+
+
+.hero-image {
+
+    min-height:350px;
+
+}
+
+
+}
