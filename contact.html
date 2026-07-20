@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -12,17 +13,18 @@
 
 </head>
 
+
 <body>
+
 
 <header>
 
 <nav class="navbar">
 
 <div class="logo">
-
 <a href="index.html">TriStar Wheel & Tire</a>
-
 </div>
+
 
 <ul class="nav-links">
 
@@ -45,62 +47,13 @@
 
 <section class="page-header">
 
-<h1>Request Your Custom Quote</h1>
+<h1>
+Request Your Custom Quote
+</h1>
 
 <p>
-
-Whether you're building a show truck, off-road rig, or daily driver,
-TriStar Wheel & Tire will help you choose the perfect wheel and tire package.
-
+Premium Wheels. Premium Tires. Built for Your Truck.
 </p>
-
-</section>
-
-
-
-
-
-<section class="section">
-
-<div class="cards">
-
-<div class="card">
-
-<h3>Premium Brands</h3>
-
-<p>
-
-Access to forged wheels, cast wheels, and premium tire brands from the names you trust.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Custom Fitment</h3>
-
-<p>
-
-We help you choose the correct wheel size, tire size, offset, and suspension fitment.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Personal Service</h3>
-
-<p>
-
-Every quote is built around your truck and your goals—no generic packages.
-
-</p>
-
-</div>
-
-</div>
 
 </section>
 
@@ -112,15 +65,33 @@ Every quote is built around your truck and your goals—no generic packages.
 
 <section class="section">
 
-<form class="quote-form" name="quote-request" method="POST" data-netlify="true">
+
+<form class="quote-form" 
+name="quote-request" 
+method="POST" 
+data-netlify="true">
+
+
 <input type="hidden" name="form-name" value="quote-request">
-<h2>Customer Information</h2>
 
-<input type="text" placeholder="Full Name" required>
 
-<input type="email" placeholder="Email Address" required>
 
-<input type="tel" placeholder="Phone Number">
+<h2>
+Customer Information
+</h2>
+
+
+<input type="text" name="name" placeholder="Full Name" required>
+
+
+<input type="email" name="email" placeholder="Email Address" required>
+
+
+<input type="tel" name="phone" placeholder="Phone Number">
+
+
+
+
 
 <hr>
 
@@ -128,25 +99,37 @@ Every quote is built around your truck and your goals—no generic packages.
 
 
 
-<h2>Vehicle Information</h2>
+<h2>
+Vehicle Information
+</h2>
 
-<input type="number" placeholder="Vehicle Year">
 
-<input type="text" placeholder="Vehicle Make">
+<input type="text" name="vehicle-year" placeholder="Vehicle Year">
 
-<input type="text" placeholder="Vehicle Model">
 
-<input type="text" placeholder="Current Wheel Size (Example: 20x10)">
+<input type="text" name="vehicle-make" placeholder="Vehicle Make">
 
-<input type="text" placeholder="Current Tire Size (Example: 35x12.50R20)">
 
-<input type="text" placeholder="Desired Wheel Size">
+<input type="text" name="vehicle-model" placeholder="Vehicle Model">
 
-<input type="text" placeholder="Desired Tire Size">
 
-<input type="text" placeholder="Lift Height (Example: 6&quot;)">
+<input type="text" name="current-wheel-size" placeholder="Current Wheel Size">
 
-<select>
+
+<input type="text" name="current-tire-size" placeholder="Current Tire Size">
+
+
+<input type="text" name="desired-wheel-size" placeholder="Desired Wheel Size">
+
+
+<input type="text" name="desired-tire-size" placeholder="Desired Tire Size">
+
+
+<input type="text" name="lift-height" placeholder="Lift Height">
+
+
+
+<select name="suspension">
 
 <option>Suspension</option>
 
@@ -158,7 +141,10 @@ Every quote is built around your truck and your goals—no generic packages.
 
 </select>
 
-<select>
+
+
+
+<select name="drive-type">
 
 <option>Drive Type</option>
 
@@ -168,17 +154,27 @@ Every quote is built around your truck and your goals—no generic packages.
 
 </select>
 
+
+
+
+
+
+
 <hr>
 
 
 
 
 
-<h2>Wheel Selection</h2>
+<h2>
+Wheel Selection
+</h2>
 
-<select>
 
-<option>Select Wheel Category</option>
+
+<select name="wheel-category">
+
+<option>Wheel Category</option>
 
 <option>Forged Wheels</option>
 
@@ -188,9 +184,12 @@ Every quote is built around your truck and your goals—no generic packages.
 
 </select>
 
-<select>
 
-<option>Select Wheel Brand</option>
+
+
+<select name="wheel-brand">
+
+<option>Wheel Brand</option>
 
 <option>American Force</option>
 
@@ -208,7 +207,10 @@ Every quote is built around your truck and your goals—no generic packages.
 
 </select>
 
-<select>
+
+
+
+<select name="wheel-finish">
 
 <option>Preferred Finish</option>
 
@@ -224,17 +226,28 @@ Every quote is built around your truck and your goals—no generic packages.
 
 </select>
 
+
+
+
+
+
+
 <hr>
 
 
 
 
 
-<h2>Tire Selection</h2>
+<h2>
+Tire Selection
+</h2>
 
-<select>
 
-<option>Select Tire Type</option>
+
+
+<select name="tire-type">
+
+<option>Tire Type</option>
 
 <option>Mud Terrain</option>
 
@@ -246,9 +259,12 @@ Every quote is built around your truck and your goals—no generic packages.
 
 </select>
 
-<select>
 
-<option>Select Tire Brand</option>
+
+
+<select name="tire-brand">
+
+<option>Tire Brand</option>
 
 <option>Nitto</option>
 
@@ -262,9 +278,15 @@ Every quote is built around your truck and your goals—no generic packages.
 
 <option>Michelin</option>
 
-<option>Other / Not Sure</option>
+<option>Other</option>
 
 </select>
+
+
+
+
+
+
 
 <hr>
 
@@ -272,11 +294,16 @@ Every quote is built around your truck and your goals—no generic packages.
 
 
 
-<h2>Build Information</h2>
+<h2>
+Build Information
+</h2>
 
-<select>
 
-<option>How Will You Use Your Truck?</option>
+
+
+<select name="truck-use">
+
+<option>Truck Use</option>
 
 <option>Daily Driver</option>
 
@@ -288,7 +315,10 @@ Every quote is built around your truck and your goals—no generic packages.
 
 </select>
 
-<select>
+
+
+
+<select name="timeline">
 
 <option>Purchase Timeline</option>
 
@@ -296,13 +326,16 @@ Every quote is built around your truck and your goals—no generic packages.
 
 <option>Within 30 Days</option>
 
-<option>1–3 Months</option>
+<option>1-3 Months</option>
 
 <option>Just Researching</option>
 
 </select>
 
-<select>
+
+
+
+<select name="contact-method">
 
 <option>Preferred Contact Method</option>
 
@@ -314,15 +347,32 @@ Every quote is built around your truck and your goals—no generic packages.
 
 </select>
 
+
+
+
+
+
+
 <hr>
 
 
 
 
 
-<h2>Tell Us About Your Build</h2>
+<h2>
+Additional Details
+</h2>
 
-<textarea rows="7" placeholder="Tell us about your truck, the look you're going for, wheel sizes you're interested in, tire sizes, or anything else you'd like us to know."></textarea>
+
+<textarea 
+name="message"
+rows="7"
+placeholder="Tell us about your truck build...">
+</textarea>
+
+
+
+
 
 <button class="button" type="submit">
 
@@ -330,7 +380,10 @@ GET MY CUSTOM QUOTE
 
 </button>
 
+
+
 </form>
+
 
 </section>
 
@@ -384,16 +437,11 @@ Quick Links
 
 
 
-
 <div class="footer-section">
 
 <h3>
 Contact
 </h3>
-
-<p>
-TriStar Wheel & Tire LLC
-</p>
 
 <p>
 Email: Your Email Here
@@ -404,7 +452,6 @@ Phone: Your Phone Here
 </p>
 
 </div>
-
 
 
 </div>
@@ -421,7 +468,10 @@ Phone: Your Phone Here
 
 </footer>
 
+
+
 <script src="js/main.js"></script>
+
 
 </body>
 
