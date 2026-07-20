@@ -950,3 +950,88 @@ footer {
     text-decoration:none;
 
 }
+/* ===========================
+   Footer
+=========================== */
+
+
+.site-footer {
+
+    background:#050505;
+    border-top:1px solid #333;
+    padding:50px 20px 20px;
+    margin-top:50px;
+
+}
+
+
+.footer-container {
+
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:40px;
+
+}
+
+
+
+.footer-section h3 {
+
+    margin-bottom:20px;
+    font-size:22px;
+
+}
+
+
+
+.footer-section p {
+
+    color:#bbb;
+    line-height:1.6;
+
+}
+
+
+
+.footer-section a {
+
+    display:block;
+    color:#bbb;
+    text-decoration:none;
+    margin-bottom:10px;
+
+}
+
+
+
+.footer-section a:hover {
+
+    color:white;
+
+}
+
+
+
+.footer-bottom {
+
+    text-align:center;
+    border-top:1px solid #333;
+    margin-top:40px;
+    padding-top:20px;
+    color:#888;
+
+}
+
+
+
+@media(max-width:800px){
+
+.footer-container{
+
+    grid-template-columns:1fr;
+
+}
+
+}
