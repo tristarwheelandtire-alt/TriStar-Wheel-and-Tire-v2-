@@ -925,3 +925,28 @@ footer {
     cursor: pointer;
 
 }
+/* ===========================
+   Gallery
+=========================== */
+
+
+.gallery-placeholder {
+
+    height:220px;
+    background:#111;
+    border:1px solid #333;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#777;
+    font-size:20px;
+    margin-bottom:20px;
+
+}
+
+
+.gallery-card a {
+
+    text-decoration:none;
+
+}
