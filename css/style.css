@@ -1188,3 +1188,20 @@ header {
 
 
 }
+.brand-card img {
+
+    max-width: 140px;
+    max-height: 70px;
+    object-fit: contain;
+    margin-bottom: 15px;
+
+}
+
+
+.brand-card p {
+
+    color: white;
+    font-weight: 700;
+    margin: 0;
+
+}
