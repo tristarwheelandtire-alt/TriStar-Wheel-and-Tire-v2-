@@ -493,16 +493,15 @@ header {
 
 .brand-list {
 
-    display:grid;
+display: grid;
 
-    grid-template-columns:
-    repeat(auto-fit,minmax(220px,1fr));
+grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
 
-    gap:25px;
+gap: 25px;
 
-    max-width:1100px;
+max-width: 1100px;
 
-    margin:40px auto;
+margin: 40px auto;
 
 }
 
@@ -510,37 +509,21 @@ header {
 
 .brand-card {
 
-    background:#1B1F24;
+background: #111;
 
-    border:1px solid #30363D;
+padding: 25px;
 
-    border-radius:12px;
+display: flex;
 
-    padding:30px;
+flex-direction: column;
 
-    text-align:center;
+align-items: center;
 
-    transition:.3s;
+justify-content: center;
 
-}
+border-radius: 12px;
 
-
-
-.brand-card:hover {
-
-    transform:translateY(-6px);
-
-    border-color:#0054A6;
-
-}
-
-
-
-.brand-card a {
-
-    text-decoration:none;
-
-    color:white;
+min-height: 150px;
 
 }
 
@@ -548,32 +531,29 @@ header {
 
 .brand-card img {
 
-    width:100%;
+max-width: 130px;
 
-    height:150px;
+max-height: 70px;
 
-    object-fit:contain;
+object-fit: contain;
 
-    background:#111315;
-
-    border-radius:8px;
-
-    padding:20px;
+margin-bottom: 15px;
 
 }
 
 
 
-.brand-card h3 {
+.brand-card p {
 
-    margin-top:20px;
+color: white;
 
-    font-size:22px;
+font-weight: 600;
+
+text-align: center;
+
+margin: 0;
 
 }
-
-
-
 
 /* ================================
    IMAGE CARDS
