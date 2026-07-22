@@ -1033,3 +1033,78 @@ header {
     width: auto;
     display: block;
 }
+/* Quote Form */
+
+.quote-form {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #111;
+    padding: 40px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+
+.quote-form h2 {
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+
+.quote-form input,
+.quote-form select,
+.quote-form textarea {
+
+    width: 100%;
+    padding: 15px;
+
+    background: #1b1b1b;
+    color: white;
+
+    border: 1px solid #333;
+    border-radius: 6px;
+
+    font-size: 16px;
+
+}
+
+
+.quote-form input::placeholder,
+.quote-form textarea::placeholder {
+
+    color: #aaa;
+
+}
+
+
+.quote-form input:focus,
+.quote-form select:focus,
+.quote-form textarea:focus {
+
+    outline: none;
+    border-color: #0054A6;
+
+}
+
+
+.quote-form hr {
+
+    width: 100%;
+    border: none;
+    border-top: 1px solid #333;
+    margin: 25px 0;
+
+}
+
+
+.quote-form .button {
+
+    margin-top: 20px;
+    align-self: center;
+    width: 250px;
+
+}
