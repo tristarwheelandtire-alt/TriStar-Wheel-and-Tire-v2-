@@ -1185,6 +1185,7 @@ margin: 0;
     margin: 0;
 
 }
+
 /* ================================
    GALLERY BUILD IMAGES
 ================================ */
@@ -1205,11 +1206,12 @@ margin: 0;
 }
 
 
+
 .gallery-card img {
 
     width:100%;
 
-    height:300px;
+    aspect-ratio:1 / 1;
 
     object-fit:contain;
 
@@ -1224,6 +1226,7 @@ margin: 0;
 }
 
 
+
 .gallery-card h3 {
 
     margin-top:20px;
@@ -1231,6 +1234,7 @@ margin: 0;
     margin-bottom:10px;
 
 }
+
 
 
 .gallery-card p {
