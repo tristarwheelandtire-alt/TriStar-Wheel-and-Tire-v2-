@@ -1206,3 +1206,10 @@ margin: 0;
     display:block;
 
 }
+.gallery-card {
+
+    max-width:320px;
+
+    margin:auto;
+
+}
