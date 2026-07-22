@@ -86,24 +86,20 @@ header {
 
 
 .logo a {
-
-    color: white;
-
+    display: flex;
+    align-items: center;
     text-decoration: none;
-
-    font-size: 28px;
-
-    font-weight: 800;
-
-    letter-spacing: 1px;
-
 }
 
+.logo img {
+    height: 70px;
+    width: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
 
-.logo a:hover {
-
-    color: #0054A6;
-
+.logo img:hover {
+    transform: scale(1.05);
 }
 
 
